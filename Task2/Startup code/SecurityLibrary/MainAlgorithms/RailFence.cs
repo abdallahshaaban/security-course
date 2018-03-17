@@ -13,7 +13,7 @@ namespace SecurityLibrary
             plainText = plainText.ToLower();
             cipherText = cipherText.ToLower();
             int key = 2;
-            for (; key <plainText.Length; key++)
+            for (; key < plainText.Length; key++)
             {
                 if (Encrypt(plainText, key) == cipherText) break;
             }
@@ -25,11 +25,11 @@ namespace SecurityLibrary
             int ColumnLength = (cipherText.Length + (key - 1)) / key;
             int NumOfExtras = cipherText.Length % key;
             string plainText = "";
-            for(int i=0; i< ColumnLength; i++)
+            for (int i = 0; i < ColumnLength; i++)
             {
-                if(i+1 != ColumnLength || NumOfExtras == 0)
+                if (i + 1 != ColumnLength || NumOfExtras == 0)
                 {
-                    for(int j=0; j<key; j++)
+                    for (int j = 0; j < key; j++)
                     {
                         plainText += cipherText[j * ColumnLength - ((NumOfExtras != 0 && j > NumOfExtras) ? 1 : 0) * (j - NumOfExtras) + i];
                     }
@@ -48,9 +48,9 @@ namespace SecurityLibrary
         public string Encrypt(string plainText, int key)
         {
             string cipherText = "";
-            for (int i=0; i<key; i++)
+            for (int i = 0; i < key; i++)
             {
-                for(int j=i; j<plainText.Length; j+=key)
+                for (int j = i; j < plainText.Length; j += key)
                 {
                     cipherText += plainText[j];
                 }

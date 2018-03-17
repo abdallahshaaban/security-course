@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +9,7 @@ namespace SecurityLibrary
     /// <summary>
     /// The List<int> is row based. Which means that the key is given in row based manner.
     /// </summary>
-    public class HillCipher :  ICryptographicTechnique<List<int>, List<int>>
+    public class HillCipher : ICryptographicTechnique<List<int>, List<int>>
     {
         public List<int> Analyse(List<int> plainText, List<int> cipherText)
         {
@@ -61,7 +61,7 @@ namespace SecurityLibrary
                 if (cnt == 2)
                     break;
             }
-            if(cnt != 2)
+            if (cnt != 2)
             {
                 throw new InvalidAnlysisException();
             }
@@ -105,7 +105,7 @@ namespace SecurityLibrary
             }
 
             int[,] invKey = FindInvKey(k);
-            if(invKey.Length == 1)
+            if (invKey.Length == 1)
             {
                 throw new Exception();
             }
@@ -144,7 +144,7 @@ namespace SecurityLibrary
             int[,] k = new int[m, m];
             int[,] pt = new int[m, 1];
             int cnt = 0;
-       
+
             //Fill key matrix
             for (int i = 0; i < m; i++)
             {
@@ -316,9 +316,9 @@ namespace SecurityLibrary
                 throw new InvalidAnlysisException();
             }
             List<int> finalList = new List<int>();
-            for(int i = 0; i < 3; i++)
+            for (int i = 0; i < 3; i++)
             {
-                for(int j = 0; j < 3; j++)
+                for (int j = 0; j < 3; j++)
                 {
                     finalList.Add(key[i, j]);
                 }
@@ -442,9 +442,9 @@ namespace SecurityLibrary
             }
 
             int[,] finalInvKey = new int[3, 3];
-            for(int j = 0; j<3; j++)
+            for (int j = 0; j < 3; j++)
             {
-                for(int i = 0; i < 3; i++)
+                for (int i = 0; i < 3; i++)
                 {
                     finalInvKey[j, i] = invKey[i, j];
                 }
@@ -458,7 +458,7 @@ namespace SecurityLibrary
         public int FindDet(int[,] matrix)
         {
             int det = 0;
-            if(matrix.Length == 4)
+            if (matrix.Length == 4)
             {
                 det = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
             }
@@ -482,7 +482,7 @@ namespace SecurityLibrary
         public int ModularMultiplicativeInverse(int a, int m)
         {
             int b = -1;
-            for(int i = 0; i < m; i++)
+            for (int i = 0; i < m; i++)
             {
                 if ((i * a) % 26 == 1)
                 {

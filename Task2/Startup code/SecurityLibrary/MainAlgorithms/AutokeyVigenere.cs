@@ -15,7 +15,7 @@ namespace SecurityLibrary
             {
                 Key += (char)(((((cipherText[i] - 'A') - (plainText[i] - 'a')) + 26) % 26) + 'a');
             }
-            return FilterTheKey(plainText,Key);
+            return FilterTheKey(plainText, Key);
         }
 
         public string Decrypt(string cipherText, string key)
@@ -23,7 +23,7 @@ namespace SecurityLibrary
             string plainText = "";
             for (int i = 0; i < cipherText.Length; ++i)
             {
-                if(i<key.Length)
+                if (i < key.Length)
                     plainText += (char)(((((cipherText[i] - 'A') - (key[i] - 'a')) + 26) % 26) + 'a');
                 else
                     plainText += (char)(((((cipherText[i] - 'A') - (plainText[i - key.Length] - 'a')) + 26) % 26) + 'a');

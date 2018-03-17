@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace SecurityLibrary
 {
     public class RepeatingkeyVigenere : ICryptographicTechnique<string, string>
     {
         public string Analyse(string plainText, string cipherText)
         {
-           string  Key = "";
-           for(int i=0; i< plainText.Length; i++)
-           {
+            string Key = "";
+            for (int i = 0; i < plainText.Length; i++)
+            {
                 Key += (char)(((((cipherText[i] - 'A') - (plainText[i] - 'a')) + 26) % 26) + 'a');
-           }
+            }
             return FilterTheKey(Key);
         }
 
@@ -30,7 +31,7 @@ namespace SecurityLibrary
 
         public string Encrypt(string plainText, string key)
         {
-            key = Repeatingkey(plainText , key);
+            key = Repeatingkey(plainText, key);
             string cipherText = "";
             for (int i = 0; i < plainText.Length; ++i)
             {
@@ -38,10 +39,10 @@ namespace SecurityLibrary
             }
             return cipherText;
         }
-        private string Repeatingkey(string plainText , string key)
+        private string Repeatingkey(string plainText, string key)
         {
             string NewKey = key;
-            for(int i=0; i < plainText.Length - key.Length; i++)
+            for (int i = 0; i < plainText.Length - key.Length; i++)
             {
                 NewKey += key[i % key.Length];
             }
@@ -51,13 +52,13 @@ namespace SecurityLibrary
         {
             string ActualKey = "";
             ActualKey += key[0];
-            for(int i=1; i<key.Length; i++)
+            for (int i = 1; i < key.Length; i++)
             {
                 int j = i;
                 int k = 0;
-                for (;j<key.Length; j++ , k++)
+                for (; j < key.Length; j++, k++)
                 {
-                    if (key[k%i] != key[j]) break;
+                    if (key[k % i] != key[j]) break;
                 }
                 if (j == key.Length) return ActualKey;
                 ActualKey += key[i];
