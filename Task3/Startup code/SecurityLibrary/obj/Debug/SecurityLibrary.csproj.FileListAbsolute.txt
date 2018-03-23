@@ -1,0 +1,20 @@
+C:\Users\fcis_\Google Drive (fcis.cs.course@gmail.com)\Students\StartupCode\SecurityLibrary\bin\Debug\SecurityLibrary.dll
+C:\Users\fcis_\Google Drive (fcis.cs.course@gmail.com)\Students\StartupCode\SecurityLibrary\bin\Debug\SecurityLibrary.pdb
+C:\Users\fcis_\Google Drive (fcis.cs.course@gmail.com)\Students\StartupCode\SecurityLibrary\obj\Debug\SecurityLibrary.csprojResolveAssemblyReference.cache
+C:\Users\fcis_\Google Drive (fcis.cs.course@gmail.com)\Students\StartupCode\SecurityLibrary\obj\Debug\SecurityLibrary.dll
+C:\Users\fcis_\Google Drive (fcis.cs.course@gmail.com)\Students\StartupCode\SecurityLibrary\obj\Debug\SecurityLibrary.pdb
+E:\year4\sem 2\Security\Startup code\SecurityLibrary\bin\Debug\SecurityLibrary.dll
+E:\year4\sem 2\Security\Startup code\SecurityLibrary\bin\Debug\SecurityLibrary.pdb
+E:\year4\sem 2\Security\Startup code\SecurityLibrary\obj\Debug\SecurityLibrary.csprojResolveAssemblyReference.cache
+E:\year4\sem 2\Security\Startup code\SecurityLibrary\obj\Debug\SecurityLibrary.dll
+E:\year4\sem 2\Security\Startup code\SecurityLibrary\obj\Debug\SecurityLibrary.pdb
+C:\Users\Lenovo-PC\Desktop\security-course\Task2\Startup code\SecurityLibrary\bin\Debug\SecurityLibrary.dll
+C:\Users\Lenovo-PC\Desktop\security-course\Task2\Startup code\SecurityLibrary\bin\Debug\SecurityLibrary.pdb
+C:\Users\Lenovo-PC\Desktop\security-course\Task2\Startup code\SecurityLibrary\obj\Debug\SecurityLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo-PC\Desktop\security-course\Task2\Startup code\SecurityLibrary\obj\Debug\SecurityLibrary.dll
+C:\Users\Lenovo-PC\Desktop\security-course\Task2\Startup code\SecurityLibrary\obj\Debug\SecurityLibrary.pdb
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\Startup code\SecurityLibrary\bin\Debug\SecurityLibrary.dll
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\Startup code\SecurityLibrary\bin\Debug\SecurityLibrary.pdb
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\Startup code\SecurityLibrary\obj\Debug\SecurityLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\Startup code\SecurityLibrary\obj\Debug\SecurityLibrary.dll
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\Startup code\SecurityLibrary\obj\Debug\SecurityLibrary.pdb
