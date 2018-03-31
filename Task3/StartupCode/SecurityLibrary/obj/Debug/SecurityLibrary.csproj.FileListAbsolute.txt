@@ -23,3 +23,8 @@ C:\Users\abdal_000\Documents\GitHub\security-course\Task3\StartupCode\SecurityLi
 C:\Users\abdal_000\Documents\GitHub\security-course\Task3\StartupCode\SecurityLibrary\obj\Debug\SecurityLibrary.csprojResolveAssemblyReference.cache
 C:\Users\abdal_000\Documents\GitHub\security-course\Task3\StartupCode\SecurityLibrary\obj\Debug\SecurityLibrary.dll
 C:\Users\abdal_000\Documents\GitHub\security-course\Task3\StartupCode\SecurityLibrary\obj\Debug\SecurityLibrary.pdb
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityLibrary\bin\Debug\SecurityLibrary.dll
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityLibrary\bin\Debug\SecurityLibrary.pdb
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityLibrary\obj\Debug\SecurityLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityLibrary\obj\Debug\SecurityLibrary.dll
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityLibrary\obj\Debug\SecurityLibrary.pdb

@@ -33,3 +33,10 @@ C:\Users\abdal_000\Documents\GitHub\security-course\Task3\StartupCode\SecurityPa
 C:\Users\abdal_000\Documents\GitHub\security-course\Task3\StartupCode\SecurityPackageTest\obj\Debug\SecurityPackageTest.csprojResolveAssemblyReference.cache
 C:\Users\abdal_000\Documents\GitHub\security-course\Task3\StartupCode\SecurityPackageTest\obj\Debug\SecurityPackageTest.dll
 C:\Users\abdal_000\Documents\GitHub\security-course\Task3\StartupCode\SecurityPackageTest\obj\Debug\SecurityPackageTest.pdb
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityPackageTest\bin\Debug\SecurityPackageTest.dll
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityPackageTest\bin\Debug\SecurityPackageTest.pdb
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityPackageTest\bin\Debug\SecurityLibrary.dll
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityPackageTest\bin\Debug\SecurityLibrary.pdb
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityPackageTest\obj\Debug\SecurityPackageTest.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityPackageTest\obj\Debug\SecurityPackageTest.dll
+C:\Users\Lenovo-PC\Desktop\security-course\Task3\StartupCode\SecurityPackageTest\obj\Debug\SecurityPackageTest.pdb
