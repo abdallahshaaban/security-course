@@ -155,7 +155,7 @@ namespace SecurityLibrary.DES
                     ShiftedBits1[i] = di_1[(i + amount) - di_1.Length];
                 }
                 else
-                { 
+                {
                     ShiftedBits[i] = ci_1[i + amount];
                     ShiftedBits1[i] = di_1[i + amount];
                 }
@@ -304,35 +304,35 @@ namespace SecurityLibrary.DES
             return sb.ToString();
         }
 
-        public static BitArray ConvertHexToBitArray(string HexStr)
+        public static BitArray hexStringToBits(string str)
         {
-            string hexData = HexStr.Substring(2, HexStr.Length - 2);
-            BitArray ba = new BitArray(4 * hexData.Length);
-            for (int i = 0; i < hexData.Length; i++)
+            string hex_string = str.Substring(2, str.Length - 2);
+            BitArray bits = new BitArray(4 * hex_string.Length);
+            for (int i = 0; i < hex_string.Length; i++)
             {
-                byte b = byte.Parse(hexData[i].ToString(), NumberStyles.HexNumber);
+                byte byt = byte.Parse(hex_string[i].ToString(), NumberStyles.HexNumber);
                 for (int j = 0; j < 4; j++)
                 {
-                    ba.Set(i * 4 + j, (b & (1 << (3 - j))) != 0);
+                    bits.Set(i * 4 + j, (byt & (1 << (3 - j))) != 0);
                 }
             }
-            return ba;
+            return bits;
         }
 
 
         public override string Decrypt(string cipherText, string key)
         {
-            BitArray nkey = ConvertHexToBitArray(key);
-            BitArray nPlainText = ConvertHexToBitArray(cipherText);
+            BitArray nkey = hexStringToBits(key);
+            BitArray nPlainText = hexStringToBits(cipherText);
             BitArray newPlainText = applyInitialPermutation(nPlainText);
             BitArray permutedArray;
             BitArray shiftedArray = applyPermutedChoice1(nkey);
-            for (int i = 15; i >= 0 ; i--)
+            for (int i = 15; i >= 0; i--)
             {
                 shiftedArray = applyPermutedChoice1(nkey);
-                for (int j=0; j<=i; j++)
+                for (int j = 0; j <= i; j++)
                 {
-                        shiftedArray = ShiftLeft(shiftedArray, j);
+                    shiftedArray = ShiftLeft(shiftedArray, j);
                 }
                 permutedArray = applyPermutedChoice2(shiftedArray);
                 newPlainText = round_i(newPlainText, permutedArray);
@@ -345,21 +345,22 @@ namespace SecurityLibrary.DES
 
         public override string Encrypt(string plainText, string key)
         {
-            BitArray nkey = ConvertHexToBitArray(key);
-            BitArray nPlainText = ConvertHexToBitArray(plainText);
-            BitArray newPlainText= applyInitialPermutation(nPlainText);
+            BitArray nkey = hexStringToBits(key);
+            BitArray nPlainText = hexStringToBits(plainText);
+            BitArray newPlainText = applyInitialPermutation(nPlainText);
             BitArray permutedArray;
             BitArray shiftedArray = applyPermutedChoice1(nkey);
-            for (int i = 0; i < 16; ++i) {
-                 shiftedArray = ShiftLeft(shiftedArray, i);
-                 permutedArray = applyPermutedChoice2(shiftedArray);
-                 newPlainText = round_i(newPlainText, permutedArray);
+            for (int i = 0; i < 16; ++i)
+            {
+                shiftedArray = ShiftLeft(shiftedArray, i);
+                permutedArray = applyPermutedChoice2(shiftedArray);
+                newPlainText = round_i(newPlainText, permutedArray);
 
             }
             newPlainText = applaySwapBits(newPlainText);
             newPlainText = applyInversePermutation(newPlainText);
             return BitArrayToHex(newPlainText);
-          //  BitArray t = applyPermutedChoice1(ConvertHexToBitArray("0x133457799BBCDFF1")); ;
+            //  BitArray t = applyPermutedChoice1(hexStringToBits("0x133457799BBCDFF1")); ;
 
         }
         private BitArray applyInitialPermutation(BitArray newPlainText)
@@ -410,7 +411,7 @@ namespace SecurityLibrary.DES
         {
             BitArray Li_1 = new BitArray(32);
             BitArray Ri_1 = new BitArray(32);
-           
+
             for (int i = 0; i < 32; ++i)
             {
                 Li_1[i] = newPlainText[i];
@@ -418,8 +419,8 @@ namespace SecurityLibrary.DES
             }
             for (int i = 0; i < 32; ++i)
             {
-                 newPlainText[i]=Ri_1[i];
-                 newPlainText[i + 32]=Li_1[i];
+                newPlainText[i] = Ri_1[i];
+                newPlainText[i + 32] = Li_1[i];
             }
             return newPlainText;
         }
