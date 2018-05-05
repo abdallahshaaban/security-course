@@ -398,7 +398,7 @@ namespace SecurityLibrary
             // Get the inverse key if the matrix is 2*2
             if (key.Length == 4)
             {
-                int x = 1 / (3 * 5 - 2 * 8);
+                int x = 1 / (key[0, 0] * key[1,1] - key[0, 1] * key[1, 0]);
                 int[,] inv = new int[2, 2];
                 inv[0, 0] = (key[1, 1] * x) % 26;
                 inv[1, 1] = (key[0, 0] * x) % 26;
